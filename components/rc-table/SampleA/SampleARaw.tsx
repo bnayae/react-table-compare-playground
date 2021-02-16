@@ -41,7 +41,7 @@ export const SampleARaw = ({ className }: IWithClassName) => {
     title: 'Avartar',
     dataIndex: 'avartar',
     key: 'avartar',
-    width: 200,
+    // width: 200,
     render: (value: string, record: IData, index: number) => (
       <img width={50} height={50} src={value} />
     ),

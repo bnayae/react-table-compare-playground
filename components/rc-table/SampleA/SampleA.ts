@@ -4,5 +4,5 @@ import { SampleARaw } from './SampleARaw';
 export const SampleA = styled(SampleARaw)`
   display: grid;
   justify-items: left;
-  padding: 20rem;
+  padding: 5rem;
 `;
