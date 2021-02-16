@@ -59,7 +59,7 @@ export const SampleARaw = ({ className }: IWithClassName) => {
       dataIndex: 'email',
       key: 'email',
       // width: 100,
-      render: (value: string, record: IData, index: number) => (
+      render: (value: string, _: IData, index: number) => (
         <input
           type="text"
           onChange={(e) =>
@@ -82,11 +82,29 @@ export const SampleARaw = ({ className }: IWithClassName) => {
     },
   ];
 
+  // const components = {
+  //   header: {
+  //     cell: ResizableTitle,
+  //   },
+  // };
+
+  // const handleResize = index => (e, { size }) => {
+  //   this.setState(({ columns }) => {
+  //     const nextColumns = [...columns];
+  //     nextColumns[index] = {
+  //       ...nextColumns[index],
+  //       width: size.width,
+  //     };
+  //     return { columns: nextColumns };
+  //   });
+  // };
+
   return (
     <Table
-      className={className}
+      className={`${className} table`}
       columns={columns}
       data={data}
+      rowClassName={(_, i) => `row ${i % 2 === 0 ? 'even-row' : 'odd-row'}`}
       // tableLayout="auto"
     />
   );
