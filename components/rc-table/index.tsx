@@ -1,0 +1,1 @@
+export { RcTable } from './RcTable';

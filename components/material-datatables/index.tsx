@@ -1,0 +1,1 @@
+export { MaterialDataTables } from './MaterialDataTables';
